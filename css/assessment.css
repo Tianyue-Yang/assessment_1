@@ -1,0 +1,42 @@
+/*css for assessment 1*/
+
+img{
+   width: 125px; 
+   margin-bottom: 10px; 
+   display: block;
+   margin: 0 auto;
+}
+
+div{
+   padding: 25px; 
+   margin:5px; 
+   text-align: center;
+}
+
+body{
+	background-image: url(../images/background.jpeg);
+	background-color: white;
+	background-repeat: repeat;
+}
+
+h1{
+	text-align: center;
+}
+
+#mystuff{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media all and (min-width: 800px){
+
+#mystuff{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+div:nth-child(odd){
+border: solid black 1pt;
+}
+
+}
